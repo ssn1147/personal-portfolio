@@ -15,7 +15,7 @@ export default function Contact() {
 
     try {
       // NOTE: When we deploy, we will change this localhost URL to your live Render URL!
-      const response = await fetch('https://portfolio-api-8j11.onrender.com', {
+      const response = await fetch('https://portfolio-api-8j11.onrender.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
